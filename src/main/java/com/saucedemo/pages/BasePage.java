@@ -22,7 +22,7 @@ public  class BasePage {
     }
 
     protected void set(By locator, String text) {
-        find(locator).clear();
+        find(locator).clear(); //  This method clears any existing text that might be present in the element.
         find(locator).sendKeys(text);
     }
 
